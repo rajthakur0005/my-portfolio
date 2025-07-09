@@ -1,0 +1,22 @@
+ul.menu li a:hover{
+	COLOR:yellow;
+	
+	
+	
+    
+        
+    }
+	
+	
+	.rajpic{
+		
+width:100%;
+
+background-image:url(bioimages/raj.jpg); 
+height:600px;
+
+    background-repeat: no-repeat;
+   background-size:cover;
+   
+	}
+	.content {

@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet"href="bio.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <title>Biography</title>
+ <STYLE>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  height:250px
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.designer{
+height:230px;}
+
+
+.contain1 {
+  position: relative;
+  
+}
+
+.designer{
+  display: block;
+
+  height: 230px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000094;
+}
+
+.contain1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container-fluid third bg-dark ">
+ 
+   <div class="col-md-12 ">
+  <div class="row">
+  <div class="col-md-3" >
+  <div class="col-md-12 bg-dark    "><img  class="pic" src ="bioimages/raj.jpg"><br>
+  <p style="text-align:center;color:white;margin-top:10px;">RAJ THAKUR </p>
+  <i class="fa fa-facebook" aria-hidden="true"></i>
+  <i class="fa fa-instagram" aria-hidden="true"></i>
+   <i class="fa fa-linkedin" aria-hidden="true"></i>
+   <i class="fa fa-envelope-o" aria-hidden="true"></i>
+<div class="list">
+
+<ul class="menu">
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="biography.html">HOME </a></li>
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="about.html">ABOUT </a></li>
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="skills.html">SKILLS </a></li>
+
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="#service">EDUCATION</a></li>
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="#blog">PORTFOLIO</a></li>
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="contact.html">CONTACT</a></li>
+<hr style="color:white;border:1px white solid;"> </hr>
+<li><a href="#contact">BLOG</a></li>
+<hr style="color:white;border:1px white solid;"> </hr>
+
+</ul>
+
+
+
+
+
+
+
+
+</div>
+  
+  </div>
+  
+  </div>
+   <div class="col-md-9 ">
+  <div class="col-md-12 ">
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 style="color:white;">WELCOME TO</h1>
+<hr>
+
+<h2 style="color:white;"> MY PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> HTML5/CSS3</button>
+  <button class="btn" onclick="filterSelection('cars')"> BOOTSTRAP</button>
+  <button class="btn" onclick="filterSelection('people')"> JAVASCRIPT</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+	<div class="contain1">
+      <img class="designer"src="bioimages/trax.png" alt="designer" style="width:100%">
+	  <div class="overlay">
+	  <div class="text">TRAX
+	  <p STYLE="FONT-SIZE:13PX;">Project url:<a href="file:///C:/Users/SONY/Desktop/trax/trax.html">file:///C:/Users/SONY/Desktop/trax/trax.html</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS<BR>
+	  Find Creativity<BR>
+In Our Template</div>
+     
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+	<div class="contain1">
+    <img class="designer"src="bioimages/belle.png" alt="designer" style="width:100%">
+       <div class="overlay">
+	  <div class="text">trax
+	  <p STYLE="FONT-SIZE:13PX;">Project url:<a href="file:///C:/Users/SONY/Desktop/gjkgjkgk/belle/belle.html">
+	  file:///C:/Users/SONY/Desktop/gjkgjkgk/belle/belle.html</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS<br>
+	  Belle we  are good <br>creative Agency</div>
+      
+    </div>
+  </div>
+   </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+	<div class="contain1">
+	 <img class="designer"src="bioimages/webcodeft.png" alt="designer" style="width:100%">
+	 <div class="overlay">
+	  <div class="text">Webcodect Technology
+	  <p STYLE="FONT-SIZE:13PX;">Project url:<a href="https://rajthakur0005.github.io/mywebsite.com/"> https://rajthakur0005.github.io/mywebsite.com/</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS BOOTSTRAP javascript<br>
+	  Software company in Hamirpur,<br> Himachal Pradesh</div>
+     
+    </div>
+  </div>
+    
+    </div>
+  </div>
+  
+  
+  
+  <div class="column cars">
+    <div class="content">
+	<div class="contain1">
+      <img class="designer"src="bioimages/skrollex.png" alt="Car" style="width:100%">
+       <div class="overlay">
+	  <div class="text">SKROLLEX
+	  <p STYLE="FONT-SIZE:13PX;"><br>Project url:<br><a href="file:///C:/Users/SONY/Desktop/skrollex/skrollex.html">file:///C:/Users/SONY/Desktop/skrollex/skrollex.html</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS BOOTSTRAP javascript<BR>
+	  We create awesome<br> theme stuff</div>
+     
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+	<div class="contain1">
+	
+     <img class="designer"src="bioimages/learning.png" alt="Car" style="width:100%">
+	  <div class="overlay">
+	  <div class="text">Great Learning
+	  <p STYLE="FONT-SIZE:13PX;"><br>Project url:<br><a href="https://rajthakur0005.github.io/my-project/">https://rajthakur0005.github.io/my-project/</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS BOOTSTRAP javascript <br>
+	  We discover AI<br>
+	  Programs</div>
+     
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+	<div class="contain1">
+    <img class="designer"src="bioimages/nav.png" alt="Car" style="width:100%">
+	<div class="overlay">
+	  <div class="text">Navietm
+	  <p STYLE="FONT-SIZE:13PX;"><br>Project url:<br><a href="file:///C:/Users/SONY/Desktop/navietm/navietm.html">file:///C:/Users/SONY/Desktop/navietm/navietm.html</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS BOOTSTRAP javascript<br>
+	  NavIETM<br>
+Rewriting the rules of the game</div>
+	 
+     
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+	<div class="contain1">
+      <img class="designer"src="bioimages/tour.png" alt="Car" style="width:100%">
+	  <div class="overlay">
+	  <div class="text">Sairag Tour and Travel
+	  <p STYLE="FONT-SIZE:13PX;"><br>Project url:<br><a href="file:///C:/Users/SONY/Desktop/new/new.html">file:///C:/Users/SONY/Desktop/new/new.html</a></p>
+	  <p STYLE="FONT-SIZE:13PX;"> Technology used: HTML CSS BOOTSTRAP javascript</div>
+	  
+     
+    </div>
+  </div>
+      
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+      
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split("  ");
+
+    for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+
+</body>
+</html>
